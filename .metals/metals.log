@@ -1,0 +1,1435 @@
+2023.04.29 23:41:58 INFO  Started: Metals version 0.11.12 in workspace 'D:\Computer Department\GameEngine-main' for client Visual Studio Code 1.73.1.
+Apr 29, 2023 11:41:58 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+Apr 29, 2023 11:41:59 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Apr 29, 2023 11:41:59 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Apr 29, 2023 11:41:59 PM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:D:\Computer Department\GameEngine-main\.metals\metals (H2 2.1)
+Apr 29, 2023 11:41:59 PM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory allAppliedMigrations
+INFO: Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+Apr 29, 2023 11:41:59 PM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.024s)
+Apr 29, 2023 11:41:59 PM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory create
+INFO: Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+Apr 29, 2023 11:41:59 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": << Empty Schema >>
+Apr 29, 2023 11:41:59 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "1 - Create tables"
+Apr 29, 2023 11:41:59 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "2 - Server discovery"
+Apr 29, 2023 11:41:59 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "3 - Jar symbols"
+Apr 29, 2023 11:41:59 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "4 - Fingerprints"
+Apr 29, 2023 11:41:59 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.061s)
+2023.04.29 23:41:59 INFO  time: initialize in 0.63s
+2023.04.29 23:42:01 WARN  Build server is not auto-connectable.
+2023.04.29 23:42:01 WARN  no build target for: D:\Computer Department\GameEngine-main\src\main\scala\com\example\HelloWorld.scala
+2023.04.29 23:42:05 INFO  no build target found for D:\Computer Department\GameEngine-main\src\main\scala\com\example\HelloWorld.scala. Using presentation compiler with project's scala-library version: 3.2.2
+2023.04.29 23:42:07 INFO  time: code lens generation in 1.92s
+2023.04.29 23:42:11 WARN  no build target for: D:\Computer Department\GameEngine-main\src\main\scala\com\example\game_engine\Constants.scala
+2023.04.29 23:42:31 WARN  no build target for: D:\Computer Department\GameEngine-main\src\main\scala\com\example\game_engine\Constants.scala
+Apr 29, 2023 11:42:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: D:\Computer Department\GameEngine-main\src\main\scala\com\example\game_engine\Constants.scala
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: D:\Computer Department\GameEngine-main\src\main\scala\com\example\game_engine\Constants.scala
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:747)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2186)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: D:\Computer Department\GameEngine-main\src\main\scala\com\example\game_engine\Constants.scala
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:469)
+	at scala.meta.internal.metals.MetalsLspService.executeCommand(MetalsLspService.scala:2031)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+2023.04.29 23:42:49 WARN  no build target for: D:\Computer Department\GameEngine-main\src\main\scala\com\example\game_engine\Controller.scala
+2023.04.29 23:42:50 WARN  no build target for: D:\Computer Department\GameEngine-main\src\main\scala\com\example\HelloWorld.scala
+2023.04.29 23:42:53 WARN  no build target for: D:\Computer Department\GameEngine-main\src\main\scala\com\example\HelloWorld.scala
+Apr 29, 2023 11:42:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: D:\Computer Department\GameEngine-main\src\main\scala\com\example\HelloWorld.scala
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: D:\Computer Department\GameEngine-main\src\main\scala\com\example\HelloWorld.scala
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:747)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2186)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: D:\Computer Department\GameEngine-main\src\main\scala\com\example\HelloWorld.scala
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:469)
+	at scala.meta.internal.metals.MetalsLspService.executeCommand(MetalsLspService.scala:2031)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+2023.04.29 23:43:13 WARN  no build target for: D:\Computer Department\GameEngine-main\src\main\scala\com\example\game_engine\Controller.scala
+2023.04.29 23:43:16 WARN  no build target for: D:\Computer Department\GameEngine-main\src\main\scala\com\example\game_engine\Drawer.scala
+2023.04.29 23:44:19 WARN  no build target for: D:\Computer Department\GameEngine-main\src\main\scala\com\example\game_engine\Constants.scala
+2023.04.29 23:44:22 WARN  no build target for: D:\Computer Department\GameEngine-main\src\main\scala\com\example\game_engine\Controller.scala
+2023.04.29 23:44:24 WARN  no build target for: D:\Computer Department\GameEngine-main\src\main\scala\com\example\game_engine\Drawer.scala
+2023.04.29 23:44:32 WARN  no build target for: D:\Computer Department\GameEngine-main\src\main\scala\com\example\game_engine\GameEngine.scala
+2023.04.29 23:44:38 WARN  no build target for: D:\Computer Department\GameEngine-main\src\main\scala\com\example\game_engine\GameEngine.scala
+Apr 29, 2023 11:44:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: D:\Computer Department\GameEngine-main\src\main\scala\com\example\game_engine\GameEngine.scala
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: D:\Computer Department\GameEngine-main\src\main\scala\com\example\game_engine\GameEngine.scala
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:747)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2186)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: D:\Computer Department\GameEngine-main\src\main\scala\com\example\game_engine\GameEngine.scala
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:469)
+	at scala.meta.internal.metals.MetalsLspService.executeCommand(MetalsLspService.scala:2031)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+2023.04.29 23:45:05 WARN  no build target for: D:\Computer Department\GameEngine-main\src\main\scala\com\example\HelloWorld.scala
+Apr 29, 2023 11:45:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: D:\Computer Department\GameEngine-main\src\main\scala\com\example\HelloWorld.scala
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: D:\Computer Department\GameEngine-main\src\main\scala\com\example\HelloWorld.scala
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:747)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2186)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: D:\Computer Department\GameEngine-main\src\main\scala\com\example\HelloWorld.scala
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:469)
+	at scala.meta.internal.metals.MetalsLspService.executeCommand(MetalsLspService.scala:2031)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+2023.04.29 23:46:38 INFO  Shutting down server
+2023.04.29 23:46:38 INFO  shutting down Metals
+2023.04.29 23:46:38 INFO  Exiting server
+2023.04.29 23:51:20 INFO  Started: Metals version 0.11.12 in workspace 'D:\Computer Department\GameEngine-main' for client Visual Studio Code 1.73.1.
+Apr 29, 2023 11:51:21 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+Apr 29, 2023 11:51:21 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Apr 29, 2023 11:51:21 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Apr 29, 2023 11:51:21 PM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:D:\Computer Department\GameEngine-main\.metals\metals (H2 2.1)
+Apr 29, 2023 11:51:21 PM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.028s)
+Apr 29, 2023 11:51:21 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Apr 29, 2023 11:51:21 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.04.29 23:51:21 INFO  time: initialize in 0.88s
+2023.04.29 23:51:23 WARN  Build server is not auto-connectable.
+2023.04.29 23:51:23 WARN  no build target for: D:\Computer Department\GameEngine-main\src\main\scala\com\example\HelloWorld.scala
+2023.04.29 23:51:27 INFO  no build target found for D:\Computer Department\GameEngine-main\src\main\scala\com\example\HelloWorld.scala. Using presentation compiler with project's scala-library version: 3.2.2
+2023.04.29 23:51:29 INFO  time: code lens generation in 4.86s
+2023.04.29 23:51:49 INFO  running 'C:\Program Files\Java\jdk-18.0.2\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -Dsbt.version=1.8.2 -jar C:\Users\BluRay\AppData\Local\Temp\metals4991214012529724071\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2023.04.29 23:51:49 ERROR Picked up _JAVA_OPTIONS: -Xmx512M
+2023.04.29 23:51:51 INFO  [info] Updated file D:\Computer Department\GameEngine-main\project\build.properties: set sbt.version to 1.8.2
+2023.04.29 23:51:51 INFO  [info] welcome to sbt 1.8.2 (Oracle Corporation Java 18.0.2)
+2023.04.29 23:51:54 INFO  [info] loading settings for project gameengine-main-build-build from metals.sbt ...
+2023.04.29 23:51:54 INFO  [info] loading project definition from D:\Computer Department\GameEngine-main\project\project
+2023.04.29 23:51:58 INFO  [info] loading settings for project gameengine-main-build from metals.sbt ...
+2023.04.29 23:51:58 INFO  [info] loading project definition from D:\Computer Department\GameEngine-main\project
+2023.04.29 23:52:01 INFO  [success] Generated .bloop\gameengine-main-build.json
+2023.04.29 23:52:01 INFO  [success] Total time: 3 s, completed Apr 29, 2023, 11:52:01 PM
+2023.04.29 23:52:04 INFO  [info] loading settings for project gameengine-main from build.sbt ...
+2023.04.29 23:52:04 INFO  [info] set current project to EngineGame (in build file:/D:/Computer%20Department/GameEngine-main/)
+2023.04.29 23:52:04 INFO  [warn] there's a key that's not used by any other settings/tasks:
+2023.04.29 23:52:04 INFO  [warn]  
+2023.04.29 23:52:04 INFO  [warn] * gameengine-main / mainClass
+2023.04.29 23:52:04 INFO  [warn]   +- D:\Computer Department\GameEngine-main\build.sbt:29
+2023.04.29 23:52:04 INFO  [warn]  
+2023.04.29 23:52:04 INFO  [warn] note: a setting might still be used by a command; to exclude a key from this `lintUnused` check
+2023.04.29 23:52:04 INFO  [warn] either append it to `Global / excludeLintKeys` or call .withRank(KeyRanks.Invisible) on the key
+2023.04.29 23:55:24 INFO  [success] Generated .bloop\gameengine-main.json
+2023.04.29 23:55:24 INFO  [success] Generated .bloop\gameengine-main-test.json
+2023.04.29 23:55:24 INFO  [success] Total time: 199 s (03:19), completed Apr 29, 2023, 11:55:24 PM
+2023.04.29 23:55:24 INFO  time: ran 'sbt bloopInstall' in 3m34s
+2023.04.29 23:55:24 INFO  Attempting to connect to the build server...
+2023.04.29 23:55:24 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.04.29 23:55:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\bsp.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.04.29 23:55:44 ERROR Timeout waiting for 'build/initialize' response
+2023.04.29 23:55:44 WARN  Retrying connection to the build server Bloop
+2023.04.29 23:55:44 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.04.29 23:55:44 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\bsp.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.04.29 23:55:44 INFO  Attempting to connect to the build server...
+2023.04.29 23:55:44 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.04.29 23:55:44 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\project\.metals\bsp.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.04.29 23:55:44 INFO  time: Connected to build server in 20s
+2023.04.29 23:55:44 INFO  Connected to Build server: Bloop v1.5.6
+2023.04.29 23:55:45 INFO  compiling gameengine-main (29 scala sources)
+2023.04.29 23:56:08 INFO  time: compiled gameengine-main in 22s
+2023.04.29 23:56:10 INFO  time: indexed workspace in 25s
+Apr 29, 2023 11:57:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 66
+Apr 29, 2023 11:57:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.DebugProvider$SemanticDbNotFoundException$: Build misconfiguration. No semanticdb can be found for you file, please check the doctor.
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.DebugProvider$SemanticDbNotFoundException$: Build misconfiguration. No semanticdb can be found for you file, please check the doctor.
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:747)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2186)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: scala.meta.internal.metals.debug.DebugProvider$SemanticDbNotFoundException$: Build misconfiguration. No semanticdb can be found for you file, please check the doctor.
+	at scala.meta.internal.metals.debug.DebugProvider$SemanticDbNotFoundException$.<clinit>(DebugProvider.scala:924)
+	at scala.meta.internal.metals.debug.DebugProvider.$anonfun$resolveInFile$1(DebugProvider.scala:340)
+	at scala.Option.fold(Option.scala:263)
+	at scala.meta.internal.metals.debug.DebugProvider.resolveInFile(DebugProvider.scala:341)
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:475)
+	at scala.meta.internal.metals.MetalsLspService.executeCommand(MetalsLspService.scala:2031)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+Apr 29, 2023 11:57:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 102
+Apr 29, 2023 11:58:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 115
+Apr 29, 2023 11:58:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.DebugProvider$SemanticDbNotFoundException$: Build misconfiguration. No semanticdb can be found for you file, please check the doctor.
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.DebugProvider$SemanticDbNotFoundException$: Build misconfiguration. No semanticdb can be found for you file, please check the doctor.
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:747)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2186)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: scala.meta.internal.metals.debug.DebugProvider$SemanticDbNotFoundException$: Build misconfiguration. No semanticdb can be found for you file, please check the doctor.
+	at scala.meta.internal.metals.debug.DebugProvider$SemanticDbNotFoundException$.<clinit>(DebugProvider.scala:924)
+	at scala.meta.internal.metals.debug.DebugProvider.$anonfun$resolveInFile$1(DebugProvider.scala:340)
+	at scala.Option.fold(Option.scala:263)
+	at scala.meta.internal.metals.debug.DebugProvider.resolveInFile(DebugProvider.scala:341)
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:475)
+	at scala.meta.internal.metals.MetalsLspService.executeCommand(MetalsLspService.scala:2031)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+Apr 29, 2023 11:58:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.DebugProvider$SemanticDbNotFoundException$: Build misconfiguration. No semanticdb can be found for you file, please check the doctor.
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.DebugProvider$SemanticDbNotFoundException$: Build misconfiguration. No semanticdb can be found for you file, please check the doctor.
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:747)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2186)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: scala.meta.internal.metals.debug.DebugProvider$SemanticDbNotFoundException$: Build misconfiguration. No semanticdb can be found for you file, please check the doctor.
+	at scala.meta.internal.metals.debug.DebugProvider$SemanticDbNotFoundException$.<clinit>(DebugProvider.scala:924)
+	at scala.meta.internal.metals.debug.DebugProvider.$anonfun$resolveInFile$1(DebugProvider.scala:340)
+	at scala.Option.fold(Option.scala:263)
+	at scala.meta.internal.metals.debug.DebugProvider.resolveInFile(DebugProvider.scala:341)
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:475)
+	at scala.meta.internal.metals.MetalsLspService.executeCommand(MetalsLspService.scala:2031)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+Apr 29, 2023 11:58:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.DebugProvider$SemanticDbNotFoundException$: Build misconfiguration. No semanticdb can be found for you file, please check the doctor.
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.DebugProvider$SemanticDbNotFoundException$: Build misconfiguration. No semanticdb can be found for you file, please check the doctor.
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:747)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2186)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: scala.meta.internal.metals.debug.DebugProvider$SemanticDbNotFoundException$: Build misconfiguration. No semanticdb can be found for you file, please check the doctor.
+	at scala.meta.internal.metals.debug.DebugProvider$SemanticDbNotFoundException$.<clinit>(DebugProvider.scala:924)
+	at scala.meta.internal.metals.debug.DebugProvider.$anonfun$resolveInFile$1(DebugProvider.scala:340)
+	at scala.Option.fold(Option.scala:263)
+	at scala.meta.internal.metals.debug.DebugProvider.resolveInFile(DebugProvider.scala:341)
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:475)
+	at scala.meta.internal.metals.MetalsLspService.executeCommand(MetalsLspService.scala:2031)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+2023.04.29 23:59:21 INFO  Shutting down server
+2023.04.29 23:59:21 INFO  shutting down Metals
+2023.04.29 23:59:21 INFO  Shut down connection with build server.
+2023.04.29 23:59:21 INFO  Shut down connection with build server.
+2023.04.29 23:59:21 INFO  Exiting server
+2023.04.30 00:13:39 INFO  Started: Metals version 0.11.12 in workspace 'D:\Computer Department\GameEngine-main' for client Visual Studio Code 1.73.1.
+Apr 30, 2023 12:13:39 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+Apr 30, 2023 12:13:39 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Apr 30, 2023 12:13:39 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Apr 30, 2023 12:13:40 AM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:D:\Computer Department\GameEngine-main\.metals\metals (H2 2.1)
+Apr 30, 2023 12:13:40 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.033s)
+Apr 30, 2023 12:13:40 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Apr 30, 2023 12:13:40 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.04.30 00:13:40 INFO  time: initialize in 1.1s
+2023.04.30 00:13:42 INFO  Attempting to connect to the build server...
+2023.04.30 00:13:42 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.04.30 00:13:42 INFO  skipping build import with status 'Installed'
+2023.04.30 00:13:42 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\bsp.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.04.30 00:13:42 INFO  Attempting to connect to the build server...
+2023.04.30 00:13:42 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.04.30 00:13:42 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\project\.metals\bsp.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.04.30 00:13:42 INFO  time: Connected to build server in 0.39s
+2023.04.30 00:13:42 INFO  Connected to Build server: Bloop v1.5.6
+2023.04.30 00:13:49 INFO  time: indexed workspace in 6.09s
+2023.04.30 00:20:29 INFO  Shutting down server
+2023.04.30 00:20:29 INFO  shutting down Metals
+2023.04.30 00:20:29 INFO  Shut down connection with build server.
+2023.04.30 00:20:29 INFO  Shut down connection with build server.
+2023.04.30 00:20:29 INFO  Exiting server
+2023.04.30 00:22:05 INFO  Started: Metals version 0.11.12 in workspace 'D:\Computer Department\GameEngine-main' for client Visual Studio Code 1.73.1.
+Apr 30, 2023 12:22:05 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+Apr 30, 2023 12:22:05 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Apr 30, 2023 12:22:05 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Apr 30, 2023 12:22:05 AM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:D:\Computer Department\GameEngine-main\.metals\metals (H2 2.1)
+Apr 30, 2023 12:22:05 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.024s)
+Apr 30, 2023 12:22:05 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Apr 30, 2023 12:22:05 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.04.30 00:22:05 INFO  time: initialize in 0.64s
+2023.04.30 00:22:07 INFO  Attempting to connect to the build server...
+2023.04.30 00:22:07 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.04.30 00:22:07 INFO  skipping build import with status 'Installed'
+2023.04.30 00:22:08 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\bsp.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.04.30 00:22:08 INFO  Attempting to connect to the build server...
+2023.04.30 00:22:08 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.04.30 00:22:08 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\project\.metals\bsp.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.04.30 00:22:08 INFO  time: Connected to build server in 0.36s
+2023.04.30 00:22:08 INFO  Connected to Build server: Bloop v1.5.6
+2023.04.30 00:22:12 INFO  time: indexed workspace in 4.69s
+2023.04.30 00:22:22 INFO  Shutting down server
+2023.04.30 00:22:22 INFO  shutting down Metals
+2023.04.30 00:22:22 INFO  Shut down connection with build server.
+2023.04.30 00:22:22 INFO  Shut down connection with build server.
+2023.04.30 00:22:22 INFO  Exiting server
+2023.04.30 00:37:19 INFO  Started: Metals version 0.11.12 in workspace 'D:\Computer Department\GameEngine-main' for client Visual Studio Code 1.73.1.
+Apr 30, 2023 12:37:19 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+Apr 30, 2023 12:37:19 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Apr 30, 2023 12:37:19 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Apr 30, 2023 12:37:19 AM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:D:\Computer Department\GameEngine-main\.metals\metals (H2 2.1)
+Apr 30, 2023 12:37:19 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.023s)
+Apr 30, 2023 12:37:19 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Apr 30, 2023 12:37:19 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.04.30 00:37:19 INFO  time: initialize in 0.63s
+2023.04.30 00:37:21 INFO  Attempting to connect to the build server...
+2023.04.30 00:37:21 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.04.30 00:37:21 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\bsp.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.04.30 00:37:21 INFO  Attempting to connect to the build server...
+2023.04.30 00:37:21 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.04.30 00:37:21 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\project\.metals\bsp.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.04.30 00:37:21 INFO  time: Connected to build server in 0.4s
+2023.04.30 00:37:21 INFO  Connected to Build server: Bloop v1.5.6
+2023.04.30 00:37:26 INFO  time: indexed workspace in 4.54s
+2023.04.30 00:37:28 INFO  running 'C:\Program Files\Java\jdk-18.0.2\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\BluRay\AppData\Local\Temp\metals1799856249419578445\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2023.04.30 00:37:28 ERROR Picked up _JAVA_OPTIONS: -Xmx512M
+2023.04.30 00:37:31 INFO  [info] welcome to sbt 1.8.2 (Oracle Corporation Java 18.0.2)
+2023.04.30 00:37:32 INFO  [info] loading settings for project gameengine-main-build-build from metals.sbt ...
+2023.04.30 00:37:33 INFO  [info] loading project definition from D:\Computer Department\GameEngine-main\project\project
+2023.04.30 00:37:34 INFO  [info] loading settings for project gameengine-main-build from metals.sbt ...
+2023.04.30 00:37:34 INFO  [info] loading project definition from D:\Computer Department\GameEngine-main\project
+2023.04.30 00:37:38 INFO  [success] Generated .bloop\gameengine-main-build.json
+2023.04.30 00:37:38 INFO  [success] Total time: 3 s, completed Apr 30, 2023, 12:37:38 AM
+2023.04.30 00:37:40 INFO  [info] loading settings for project gameengine-main from build.sbt ...
+2023.04.30 00:37:40 INFO  [info] set current project to EngineGame (in build file:/D:/Computer%20Department/GameEngine-main/)
+2023.04.30 00:37:40 INFO  [warn] there's a key that's not used by any other settings/tasks:
+2023.04.30 00:37:40 INFO  [warn]  
+2023.04.30 00:37:40 INFO  [warn] * gameengine-main / mainClass
+2023.04.30 00:37:40 INFO  [warn]   +- D:\Computer Department\GameEngine-main\build.sbt:29
+2023.04.30 00:37:40 INFO  [warn]  
+2023.04.30 00:37:40 INFO  [warn] note: a setting might still be used by a command; to exclude a key from this `lintUnused` check
+2023.04.30 00:37:40 INFO  [warn] either append it to `Global / excludeLintKeys` or call .withRank(KeyRanks.Invisible) on the key
+2023.04.30 00:37:54 INFO  [success] Generated .bloop\gameengine-main.json
+2023.04.30 00:37:54 INFO  [success] Generated .bloop\gameengine-main-test.json
+2023.04.30 00:37:54 INFO  [success] Total time: 14 s, completed Apr 30, 2023, 12:37:54 AM
+2023.04.30 00:37:54 INFO  time: ran 'sbt bloopInstall' in 26s
+2023.04.30 00:37:55 INFO  Disconnecting from Bloop session...
+2023.04.30 00:37:55 INFO  Shut down connection with build server.
+2023.04.30 00:37:55 INFO  Shut down connection with build server.
+2023.04.30 00:37:55 INFO  Attempting to connect to the build server...
+2023.04.30 00:37:55 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.04.30 00:37:55 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\bsp.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.04.30 00:37:55 INFO  Attempting to connect to the build server...
+2023.04.30 00:37:55 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.04.30 00:37:55 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\project\.metals\bsp.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.04.30 00:37:55 INFO  time: Connected to build server in 0.27s
+2023.04.30 00:37:55 INFO  Connected to Build server: Bloop v1.5.6
+2023.04.30 00:37:55 INFO  time: Imported build in 0.11s
+2023.04.30 00:37:58 INFO  time: indexed workspace in 3.5s
+2023.04.30 00:38:54 INFO  compiling gameengine-main (29 scala sources)
+2023.04.30 00:39:03 INFO  time: compiled gameengine-main in 8.54s
+2023.04.30 00:39:08 INFO  Configured debugger context in 3 seconds
+2023.04.30 00:39:08 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\dap-server.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2023.04.30 00:39:08 ERROR Picked up _JAVA_OPTIONS: -Xmx512M
+2023.04.30 00:39:08 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\dap-client.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2023.04.30 00:39:09 INFO  Starting debug proxy for [com.example.HelloWorld]
+2023.04.30 00:39:08 INFO  Trying to attach to remote debuggee VM 127.0.0.1:54730 .
+2023.04.30 00:39:08 INFO  Attaching to debuggee VM succeeded.
+2023.04.30 00:39:10 ERROR Apr 30, 2023 12:39:10 AM com.sun.javafx.application.PlatformImpl startup
+2023.04.30 00:39:10 ERROR WARNING: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @3018f65c'
+2023.04.30 00:39:15 ERROR Exception in Application start method
+2023.04.30 00:39:15 ERROR Exception in thread "main" java.lang.RuntimeException: Exception in Application start method
+2023.04.30 00:39:15 ERROR 	at com.sun.javafx.application.LauncherImpl.launchApplication1(LauncherImpl.java:900)
+2023.04.30 00:39:15 ERROR 	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication$2(LauncherImpl.java:195)
+2023.04.30 00:39:15 ERROR 	at java.base/java.lang.Thread.run(Thread.java:833)
+2023.04.30 00:39:15 ERROR Caused by: MediaException: MEDIA_UNAVAILABLE : D:\Computer Department\GameEngine-main\src\resources\audio\start_game.mp3 (The system cannot find the path specified)
+2023.04.30 00:39:15 ERROR 	at javafx.scene.media.AudioClip.<init>(AudioClip.java:87)
+2023.04.30 00:39:15 ERROR 	at scalafx.scene.media.AudioClip.<init>(AudioClip.scala:53)
+2023.04.30 00:39:15 ERROR 	at com.example.HelloWorld$$anon$2.<init>(HelloWorld.scala:68)
+2023.04.30 00:39:15 ERROR 	at com.example.HelloWorld$$anon$1.<init>(HelloWorld.scala:95)
+2023.04.30 00:39:15 ERROR 	at com.example.HelloWorld$.start(HelloWorld.scala:96)
+2023.04.30 00:39:15 ERROR 	at scalafx.application.JFXApp3.main$$anonfun$1(JFXApp3.scala:301)
+2023.04.30 00:39:15 ERROR 	at scalafx.application.JFXApp3.init$$anonfun$1(JFXApp3.scala:316)
+2023.04.30 00:39:15 ERROR 	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+2023.04.30 00:39:15 ERROR 	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+2023.04.30 00:39:15 ERROR 	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:575)
+2023.04.30 00:39:15 ERROR 	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:573)
+2023.04.30 00:39:15 ERROR 	at scala.collection.AbstractIterable.foreach(Iterable.scala:933)
+2023.04.30 00:39:15 ERROR 	at scalafx.application.JFXApp3.init(JFXApp3.scala:316)
+2023.04.30 00:39:15 ERROR 	at scalafx.application.JFXApp3.init$(JFXApp3.scala:251)
+2023.04.30 00:39:15 ERROR 	at com.example.HelloWorld$.init(HelloWorld.scala:20)
+2023.04.30 00:39:15 ERROR 	at scalafx.application.AppHelper3.start(AppHelper3.scala:33)
+2023.04.30 00:39:15 ERROR 	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:846)
+2023.04.30 00:39:15 ERROR 	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:474)
+2023.04.30 00:39:15 ERROR 	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:447)
+2023.04.30 00:39:15 ERROR 	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+2023.04.30 00:39:15 ERROR 	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:446)
+2023.04.30 00:39:15 ERROR 	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+2023.04.30 00:39:15 ERROR 	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+2023.04.30 00:39:15 ERROR 	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+2023.04.30 00:39:15 ERROR 	... 1 more
+2023.04.30 00:39:15 INFO  Closing debug server tcp://0.0.0.0:54727
+2023.04.30 00:39:16 INFO  Canceling debug proxy for [com.example.HelloWorld]
+Apr 30, 2023 12:40:04 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 37
+2023.04.30 00:40:12 INFO  compiling gameengine-main (1 scala source)
+2023.04.30 00:40:12 INFO  time: compiled gameengine-main in 0.6s
+2023.04.30 00:40:41 INFO  compiling gameengine-main (1 scala source)
+2023.04.30 00:40:41 INFO  time: compiled gameengine-main in 0.38s
+2023.04.30 00:40:45 INFO  compiling gameengine-main (1 scala source)
+2023.04.30 00:40:47 INFO  time: compiled gameengine-main in 2.02s
+Apr 30, 2023 12:42:09 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 139
+2023.04.30 00:42:14 INFO  compiling gameengine-main (1 scala source)
+2023.04.30 00:42:14 INFO  file:///D:/Computer%20Department/GameEngine-main/src/main/scala/com/example/game_engine/checkers/CheckersDrawer.scala:49:30: stale bloop warning: method + in class Int is deprecated since 2.13.0: Adding a number and a String is deprecated. Use the string interpolation `s"$num$str"`
+    val l: Label = new Label(8 - i + "")
+                             ^^^^^^^
+2023.04.30 00:42:14 INFO  file:///D:/Computer%20Department/GameEngine-main/src/main/scala/com/example/game_engine/checkers/CheckersDrawer.scala:56:23: stale bloop warning: method + in class Char is deprecated since 2.13.0: Adding a number and a String is deprecated. Use the string interpolation `s"$num$str"`
+    val l = new Label((i + 65).toChar + "")
+                      ^^^^^^^^^^^^^^^^^
+2023.04.30 00:42:14 INFO  file:///D:/Computer%20Department/GameEngine-main/src/main/scala/com/example/game_engine/checkers/CheckersDrawer.scala:49:30: stale bloop warning: method + in class Int is deprecated since 2.13.0: Adding a number and a String is deprecated. Use the string interpolation `s"$num$str"`
+    val l: Label = new Label(8 - i + "")
+                             ^^^^^^^
+2023.04.30 00:42:14 INFO  file:///D:/Computer%20Department/GameEngine-main/src/main/scala/com/example/game_engine/checkers/CheckersDrawer.scala:56:23: stale bloop warning: method + in class Char is deprecated since 2.13.0: Adding a number and a String is deprecated. Use the string interpolation `s"$num$str"`
+    val l = new Label((i + 65).toChar + "")
+                      ^^^^^^^^^^^^^^^^^
+2023.04.30 00:42:14 INFO  file:///D:/Computer%20Department/GameEngine-main/src/main/scala/com/example/game_engine/checkers/CheckersDrawer.scala:49:30: stale bloop error: Not found: ~
+    val l: Label = new Label(~)
+                             ^
+2023.04.30 00:42:14 INFO  time: compiled gameengine-main in 0.61s
+2023.04.30 00:42:14 INFO  file:///D:/Computer%20Department/GameEngine-main/src/main/scala/com/example/game_engine/checkers/CheckersDrawer.scala:49:30: stale bloop error: Not found: ~
+    val l: Label = new Label(~)
+                             ^
+2023.04.30 00:42:15 INFO  file:///D:/Computer%20Department/GameEngine-main/src/main/scala/com/example/game_engine/checkers/CheckersDrawer.scala:49:30: stale bloop error: Not found: ~
+    val l: Label = new Label(~)
+                             ^
+2023.04.30 00:42:16 INFO  file:///D:/Computer%20Department/GameEngine-main/src/main/scala/com/example/game_engine/checkers/CheckersDrawer.scala:49:30: stale bloop error: Not found: ~
+    val l: Label = new Label(~)
+                             ^
+2023.04.30 00:42:16 INFO  compiling gameengine-main (1 scala source)
+2023.04.30 00:42:16 INFO  file:///D:/Computer%20Department/GameEngine-main/src/main/scala/com/example/game_engine/checkers/CheckersDrawer.scala:49:30: stale bloop error: empty quoted identifier
+    val l: Label = new Label(``)
+                             ^
+2023.04.30 00:42:16 INFO  file:///D:/Computer%20Department/GameEngine-main/src/main/scala/com/example/game_engine/checkers/CheckersDrawer.scala:49:30: stale bloop error: empty quoted identifier
+    val l: Label = new Label(``)
+                             ^
+2023.04.30 00:42:16 INFO  file:///D:/Computer%20Department/GameEngine-main/src/main/scala/com/example/game_engine/checkers/CheckersDrawer.scala:49:30: stale bloop error: empty quoted identifier
+    val l: Label = new Label(``)
+                             ^
+2023.04.30 00:42:16 INFO  time: compiled gameengine-main in 0.5s
+2023.04.30 00:42:16 INFO  file:///D:/Computer%20Department/GameEngine-main/src/main/scala/com/example/game_engine/checkers/CheckersDrawer.scala:49:30: stale bloop error: empty quoted identifier
+    val l: Label = new Label(``)
+                             ^
+2023.04.30 00:42:16 INFO  file:///D:/Computer%20Department/GameEngine-main/src/main/scala/com/example/game_engine/checkers/CheckersDrawer.scala:49:30: stale bloop error: empty quoted identifier
+    val l: Label = new Label(``)
+                             ^
+2023.04.30 00:42:20 INFO  file:///D:/Computer%20Department/GameEngine-main/src/main/scala/com/example/game_engine/checkers/CheckersDrawer.scala:56:23: stale bloop warning: method + in class Char is deprecated since 2.13.0: Adding a number and a String is deprecated. Use the string interpolation `s"$num$str"`
+    val l = new Label((i + 65).toChar + "")
+                      ^^^^^^^^^^^^^^^^^
+2023.04.30 00:42:20 INFO  file:///D:/Computer%20Department/GameEngine-main/src/main/scala/com/example/game_engine/checkers/CheckersDrawer.scala:49:30: stale bloop warning: method + in class Int is deprecated since 2.13.0: Adding a number and a String is deprecated. Use the string interpolation `s"$num$str"`
+    val l: Label = new Label(8 - i + "")
+                             ^^^^^^^
+2023.04.30 00:42:20 INFO  file:///D:/Computer%20Department/GameEngine-main/src/main/scala/com/example/game_engine/checkers/CheckersDrawer.scala:56:23: stale bloop warning: method + in class Char is deprecated since 2.13.0: Adding a number and a String is deprecated. Use the string interpolation `s"$num$str"`
+    val l = new Label((i + 65).toChar + "")
+                      ^^^^^^^^^^^^^^^^^
+2023.04.30 00:42:20 INFO  file:///D:/Computer%20Department/GameEngine-main/src/main/scala/com/example/game_engine/checkers/CheckersDrawer.scala:49:30: stale bloop warning: method + in class Int is deprecated since 2.13.0: Adding a number and a String is deprecated. Use the string interpolation `s"$num$str"`
+    val l: Label = new Label(8 - i + "")
+                             ^^^^^^^
+2023.04.30 00:42:20 INFO  file:///D:/Computer%20Department/GameEngine-main/src/main/scala/com/example/game_engine/checkers/CheckersDrawer.scala:56:23: stale bloop warning: method + in class Char is deprecated since 2.13.0: Adding a number and a String is deprecated. Use the string interpolation `s"$num$str"`
+    val l = new Label((i + 65).toChar + "")
+                      ^^^^^^^^^^^^^^^^^
+2023.04.30 00:42:20 INFO  file:///D:/Computer%20Department/GameEngine-main/src/main/scala/com/example/game_engine/checkers/CheckersDrawer.scala:49:30: stale bloop warning: method + in class Int is deprecated since 2.13.0: Adding a number and a String is deprecated. Use the string interpolation `s"$num$str"`
+    val l: Label = new Label(8 - i + "")
+                             ^^^^^^^
+2023.04.30 00:42:21 INFO  compiling gameengine-main (1 scala source)
+2023.04.30 00:42:21 INFO  file:///D:/Computer%20Department/GameEngine-main/src/main/scala/com/example/game_engine/checkers/CheckersDrawer.scala:49:40: stale bloop error: unclosed quoted identifier
+    val l: Label = new Label(8 - i + ""`)
+                                       ^
+2023.04.30 00:42:22 INFO  file:///D:/Computer%20Department/GameEngine-main/src/main/scala/com/example/game_engine/checkers/CheckersDrawer.scala:49:40: stale bloop error: unclosed quoted identifier
+    val l: Label = new Label(8 - i + ""`)
+                                       ^
+2023.04.30 00:42:22 INFO  file:///D:/Computer%20Department/GameEngine-main/src/main/scala/com/example/game_engine/checkers/CheckersDrawer.scala:49:40: stale bloop error: unclosed quoted identifier
+    val l: Label = new Label(8 - i + ""`)
+                                       ^
+2023.04.30 00:42:23 INFO  file:///D:/Computer%20Department/GameEngine-main/src/main/scala/com/example/game_engine/checkers/CheckersDrawer.scala:49:40: stale bloop error: unclosed quoted identifier
+    val l: Label = new Label(8 - i + ""`)
+                                       ^
+2023.04.30 00:42:23 INFO  file:///D:/Computer%20Department/GameEngine-main/src/main/scala/com/example/game_engine/checkers/CheckersDrawer.scala:53:4: stale bloop error: Found:    Unit
+Required: scalafx.scene.control.Label
+  }
+   ^
+2023.04.30 00:42:23 INFO  time: compiled gameengine-main in 1.41s
+2023.04.30 00:42:23 INFO  compiling gameengine-main (1 scala source)
+2023.04.30 00:42:23 INFO  time: compiled gameengine-main in 0.23s
+2023.04.30 00:42:28 INFO  compiling gameengine-main (1 scala source)
+2023.04.30 00:42:28 INFO  time: compiled gameengine-main in 0.49s
+2023.04.30 00:42:30 INFO  compiling gameengine-main (1 scala source)
+2023.04.30 00:42:30 INFO  time: compiled gameengine-main in 0.21s
+2023.04.30 00:42:31 INFO  compiling gameengine-main (1 scala source)
+2023.04.30 00:42:31 INFO  time: compiled gameengine-main in 0.2s
+2023.04.30 00:42:33 INFO  compiling gameengine-main (1 scala source)
+2023.04.30 00:42:33 INFO  time: compiled gameengine-main in 0.33s
+2023.04.30 00:42:34 INFO  compiling gameengine-main (1 scala source)
+2023.04.30 00:42:34 INFO  time: compiled gameengine-main in 0.18s
+2023.04.30 00:42:37 INFO  compiling gameengine-main (1 scala source)
+2023.04.30 00:42:37 INFO  time: compiled gameengine-main in 0.18s
+2023.04.30 00:42:39 INFO  compiling gameengine-main (1 scala source)
+2023.04.30 00:42:39 INFO  time: compiled gameengine-main in 0.19s
+2023.04.30 00:42:45 INFO  compiling gameengine-main (1 scala source)
+2023.04.30 00:42:45 INFO  time: compiled gameengine-main in 0.19s
+2023.04.30 00:42:48 INFO  compiling gameengine-main (1 scala source)
+2023.04.30 00:42:48 INFO  time: compiled gameengine-main in 0.2s
+2023.04.30 00:42:51 INFO  compiling gameengine-main (1 scala source)
+2023.04.30 00:42:51 INFO  time: compiled gameengine-main in 0.19s
+2023.04.30 00:42:55 INFO  file:///D:/Computer%20Department/GameEngine-main/src/main/scala/com/example/game_engine/checkers/CheckersDrawer.scala:49:30: stale bloop error: Not found: s"$(8 - i)  $"""
+    val l: Label = new Label(`s"$(8 - i)  $\"""`)
+                             ^^^^^^^^^^^^^^^^^^^
+2023.04.30 00:42:55 INFO  file:///D:/Computer%20Department/GameEngine-main/src/main/scala/com/example/game_engine/checkers/CheckersDrawer.scala:49:30: stale bloop error: Not found: s"$(8 - i)  $"""
+    val l: Label = new Label(`s"$(8 - i)  $\"""`)
+                             ^^^^^^^^^^^^^^^^^^^
+Apr 30, 2023 12:43:02 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.DebugProvider$NoRunOptionException$: There is nothing to run or test in the current file.
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.DebugProvider$NoRunOptionException$: There is nothing to run or test in the current file.
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:747)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2186)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: scala.meta.internal.metals.debug.DebugProvider$NoRunOptionException$: There is nothing to run or test in the current file.
+	at scala.meta.internal.metals.debug.DebugProvider$NoRunOptionException$.<clinit>(DebugProvider.scala:920)
+	at scala.meta.internal.metals.debug.DebugProvider.$anonfun$resolveInFile$2(DebugProvider.scala:370)
+	at scala.Option.fold(Option.scala:263)
+	at scala.meta.internal.metals.debug.DebugProvider.resolveInFile(DebugProvider.scala:341)
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:475)
+	at scala.meta.internal.metals.MetalsLspService.executeCommand(MetalsLspService.scala:2031)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+2023.04.30 00:43:52 INFO  Deduplicating compilation of gameengine-main from bsp client 'Metals 0.11.12' (since 5m 56.99s)
+2023.04.30 00:43:54 INFO  Configured debugger context in 2 seconds
+2023.04.30 00:43:54 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\dap-server.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2023.04.30 00:43:54 ERROR Picked up _JAVA_OPTIONS: -Xmx512M
+2023.04.30 00:43:54 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\dap-client.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2023.04.30 00:43:54 INFO  Starting debug proxy for [com.example.HelloWorld]
+2023.04.30 00:43:54 INFO  Trying to attach to remote debuggee VM 127.0.0.1:54849 .
+2023.04.30 00:43:54 INFO  Attaching to debuggee VM succeeded.
+2023.04.30 00:43:54 ERROR Apr 30, 2023 12:43:55 AM com.sun.javafx.application.PlatformImpl startup
+2023.04.30 00:43:54 ERROR WARNING: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @3018f65c'
+2023.04.30 00:44:00 ERROR Exception in Application start method
+2023.04.30 00:44:00 ERROR Exception in thread "main" java.lang.RuntimeException: Exception in Application start method
+2023.04.30 00:44:00 ERROR 	at com.sun.javafx.application.LauncherImpl.launchApplication1(LauncherImpl.java:900)
+2023.04.30 00:44:00 ERROR 	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication$2(LauncherImpl.java:195)
+2023.04.30 00:44:00 ERROR 	at java.base/java.lang.Thread.run(Thread.java:833)
+2023.04.30 00:44:00 ERROR Caused by: MediaException: MEDIA_UNAVAILABLE : D:\Computer Department\GameEngine-main\src\resources\audio\start_game.mp3 (The system cannot find the path specified)
+2023.04.30 00:44:00 ERROR 	at javafx.scene.media.AudioClip.<init>(AudioClip.java:87)
+2023.04.30 00:44:00 ERROR 	at scalafx.scene.media.AudioClip.<init>(AudioClip.scala:53)
+2023.04.30 00:44:00 ERROR 	at com.example.HelloWorld$$anon$2.<init>(HelloWorld.scala:68)
+2023.04.30 00:44:00 ERROR 	at com.example.HelloWorld$$anon$1.<init>(HelloWorld.scala:95)
+2023.04.30 00:44:00 ERROR 	at com.example.HelloWorld$.start(HelloWorld.scala:96)
+2023.04.30 00:44:00 ERROR 	at scalafx.application.JFXApp3.main$$anonfun$1(JFXApp3.scala:301)
+2023.04.30 00:44:00 ERROR 	at scalafx.application.JFXApp3.init$$anonfun$1(JFXApp3.scala:316)
+2023.04.30 00:44:00 ERROR 	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+2023.04.30 00:44:00 ERROR 	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+2023.04.30 00:44:00 ERROR 	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:575)
+2023.04.30 00:44:00 ERROR 	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:573)
+2023.04.30 00:44:00 ERROR 	at scala.collection.AbstractIterable.foreach(Iterable.scala:933)
+2023.04.30 00:44:00 ERROR 	at scalafx.application.JFXApp3.init(JFXApp3.scala:316)
+2023.04.30 00:44:00 ERROR 	at scalafx.application.JFXApp3.init$(JFXApp3.scala:251)
+2023.04.30 00:44:00 ERROR 	at com.example.HelloWorld$.init(HelloWorld.scala:20)
+2023.04.30 00:44:00 ERROR 	at scalafx.application.AppHelper3.start(AppHelper3.scala:33)
+2023.04.30 00:44:00 ERROR 	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:846)
+2023.04.30 00:44:00 ERROR 	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:474)
+2023.04.30 00:44:00 ERROR 	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:447)
+2023.04.30 00:44:00 ERROR 	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+2023.04.30 00:44:00 ERROR 	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:446)
+2023.04.30 00:44:00 ERROR 	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+2023.04.30 00:44:00 ERROR 	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+2023.04.30 00:44:00 ERROR 	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+2023.04.30 00:44:00 ERROR 	... 1 more
+2023.04.30 00:44:00 INFO  Canceling debug proxy for [com.example.HelloWorld]
+2023.04.30 00:44:00 INFO  Closing debug server tcp://0.0.0.0:54846
+Apr 30, 2023 1:10:01 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Apr 30, 2023 1:10:21 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Apr 30, 2023 1:10:35 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Apr 30, 2023 1:10:37 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Apr 30, 2023 1:10:48 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.04.30 01:11:01 INFO  Deduplicating compilation of gameengine-main from bsp client 'Metals 0.11.12' (since 33m 6.324s)
+2023.04.30 01:11:04 INFO  Configured debugger context in 3 seconds
+2023.04.30 01:11:04 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\dap-server.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2023.04.30 01:11:04 ERROR Picked up _JAVA_OPTIONS: -Xmx512M
+2023.04.30 01:11:04 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\dap-client.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2023.04.30 01:11:05 INFO  Starting debug proxy for [com.example.HelloWorld]
+2023.04.30 01:11:04 INFO  Trying to attach to remote debuggee VM 127.0.0.1:55713 .
+2023.04.30 01:11:04 INFO  Attaching to debuggee VM succeeded.
+2023.04.30 01:11:06 ERROR Apr 30, 2023 1:11:06 AM com.sun.javafx.application.PlatformImpl startup
+2023.04.30 01:11:06 ERROR WARNING: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @3018f65c'
+2023.04.30 01:11:11 ERROR Exception in Application start method
+2023.04.30 01:11:11 ERROR Exception in thread "main" java.lang.RuntimeException: Exception in Application start method
+2023.04.30 01:11:11 ERROR 	at com.sun.javafx.application.LauncherImpl.launchApplication1(LauncherImpl.java:900)
+2023.04.30 01:11:11 ERROR 	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication$2(LauncherImpl.java:195)
+2023.04.30 01:11:11 ERROR 	at java.base/java.lang.Thread.run(Thread.java:833)
+2023.04.30 01:11:11 ERROR Caused by: MediaException: MEDIA_UNAVAILABLE : D:\Computer Department\GameEngine-main\src\resources\audio\start_game.mp3 (The system cannot find the path specified)
+2023.04.30 01:11:11 ERROR 	at javafx.scene.media.AudioClip.<init>(AudioClip.java:87)
+2023.04.30 01:11:11 ERROR 	at scalafx.scene.media.AudioClip.<init>(AudioClip.scala:53)
+2023.04.30 01:11:11 ERROR 	at com.example.HelloWorld$$anon$2.<init>(HelloWorld.scala:68)
+2023.04.30 01:11:11 ERROR 	at com.example.HelloWorld$$anon$1.<init>(HelloWorld.scala:95)
+2023.04.30 01:11:11 ERROR 	at com.example.HelloWorld$.start(HelloWorld.scala:96)
+2023.04.30 01:11:11 ERROR 	at scalafx.application.JFXApp3.main$$anonfun$1(JFXApp3.scala:301)
+2023.04.30 01:11:11 ERROR 	at scalafx.application.JFXApp3.init$$anonfun$1(JFXApp3.scala:316)
+2023.04.30 01:11:11 ERROR 	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+2023.04.30 01:11:11 ERROR 	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+2023.04.30 01:11:11 ERROR 	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:575)
+2023.04.30 01:11:11 ERROR 	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:573)
+2023.04.30 01:11:11 ERROR 	at scala.collection.AbstractIterable.foreach(Iterable.scala:933)
+2023.04.30 01:11:11 ERROR 	at scalafx.application.JFXApp3.init(JFXApp3.scala:316)
+2023.04.30 01:11:11 ERROR 	at scalafx.application.JFXApp3.init$(JFXApp3.scala:251)
+2023.04.30 01:11:11 ERROR 	at com.example.HelloWorld$.init(HelloWorld.scala:20)
+2023.04.30 01:11:11 ERROR 	at scalafx.application.AppHelper3.start(AppHelper3.scala:33)
+2023.04.30 01:11:11 ERROR 	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:846)
+2023.04.30 01:11:11 ERROR 	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:474)
+2023.04.30 01:11:11 ERROR 	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:447)
+2023.04.30 01:11:11 ERROR 	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+2023.04.30 01:11:11 ERROR 	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:446)
+2023.04.30 01:11:11 ERROR 	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+2023.04.30 01:11:11 ERROR 	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+2023.04.30 01:11:11 ERROR 	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+2023.04.30 01:11:11 ERROR 	... 1 more
+2023.04.30 01:11:11 INFO  Closing debug server tcp://0.0.0.0:55710
+2023.04.30 01:11:11 INFO  Canceling debug proxy for [com.example.HelloWorld]
+2023.04.30 01:11:31 INFO  Shutting down server
+2023.04.30 01:11:31 INFO  shutting down Metals
+2023.04.30 01:11:31 INFO  Shut down connection with build server.
+2023.04.30 01:11:31 INFO  Shut down connection with build server.
+2023.04.30 01:11:31 INFO  Exiting server
+2023.04.30 01:13:30 INFO  Started: Metals version 0.11.12 in workspace 'D:\Computer Department\GameEngine-main' for client Visual Studio Code 1.73.1.
+Apr 30, 2023 1:13:30 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+Apr 30, 2023 1:13:30 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Apr 30, 2023 1:13:30 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Apr 30, 2023 1:13:30 AM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:D:\Computer Department\GameEngine-main\.metals\metals (H2 2.1)
+Apr 30, 2023 1:13:30 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.032s)
+Apr 30, 2023 1:13:30 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Apr 30, 2023 1:13:30 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.04.30 01:13:31 INFO  time: initialize in 0.91s
+2023.04.30 01:13:33 INFO  Attempting to connect to the build server...
+2023.04.30 01:13:33 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.04.30 01:13:33 INFO  skipping build import with status 'Installed'
+2023.04.30 01:13:33 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\bsp.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.04.30 01:13:33 INFO  Attempting to connect to the build server...
+2023.04.30 01:13:33 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.04.30 01:13:33 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\project\.metals\bsp.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.04.30 01:13:33 INFO  time: Connected to build server in 0.4s
+2023.04.30 01:13:33 INFO  Connected to Build server: Bloop v1.5.6
+Apr 30, 2023 1:13:34 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.DebugProvider$SemanticDbNotFoundException$: Build misconfiguration. No semanticdb can be found for you file, please check the doctor.
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.DebugProvider$SemanticDbNotFoundException$: Build misconfiguration. No semanticdb can be found for you file, please check the doctor.
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:747)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2186)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: scala.meta.internal.metals.debug.DebugProvider$SemanticDbNotFoundException$: Build misconfiguration. No semanticdb can be found for you file, please check the doctor.
+	at scala.meta.internal.metals.debug.DebugProvider$SemanticDbNotFoundException$.<clinit>(DebugProvider.scala:924)
+	at scala.meta.internal.metals.debug.DebugProvider.$anonfun$resolveInFile$1(DebugProvider.scala:340)
+	at scala.Option.fold(Option.scala:263)
+	at scala.meta.internal.metals.debug.DebugProvider.resolveInFile(DebugProvider.scala:341)
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:475)
+	at scala.meta.internal.metals.MetalsLspService.executeCommand(MetalsLspService.scala:2031)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+2023.04.30 01:13:39 INFO  time: indexed workspace in 5.81s
+2023.04.30 01:14:16 INFO  Deduplicating compilation of gameengine-main from bsp client 'Metals 0.11.12' (since 42.948s)
+2023.04.30 01:14:19 INFO  Configured debugger context in 2 seconds
+2023.04.30 01:14:19 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\dap-server.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2023.04.30 01:14:19 ERROR Picked up _JAVA_OPTIONS: -Xmx512M
+2023.04.30 01:14:19 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\dap-client.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2023.04.30 01:14:19 INFO  Starting debug proxy for [com.example.HelloWorld]
+2023.04.30 01:14:19 INFO  Trying to attach to remote debuggee VM 127.0.0.1:55818 .
+2023.04.30 01:14:19 INFO  Attaching to debuggee VM succeeded.
+2023.04.30 01:14:19 ERROR Apr 30, 2023 1:14:20 AM com.sun.javafx.application.PlatformImpl startup
+2023.04.30 01:14:19 ERROR WARNING: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @3018f65c'
+2023.04.30 01:14:25 ERROR Exception in Application start method
+2023.04.30 01:14:25 ERROR Exception in thread "main" java.lang.RuntimeException: Exception in Application start method
+2023.04.30 01:14:25 ERROR 	at com.sun.javafx.application.LauncherImpl.launchApplication1(LauncherImpl.java:900)
+2023.04.30 01:14:25 ERROR 	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication$2(LauncherImpl.java:195)
+2023.04.30 01:14:25 ERROR 	at java.base/java.lang.Thread.run(Thread.java:833)
+2023.04.30 01:14:25 ERROR Caused by: MediaException: MEDIA_UNAVAILABLE : D:\Computer Department\GameEngine-main\src\resources\audio\start_game.mp3 (The system cannot find the path specified)
+2023.04.30 01:14:25 ERROR 	at javafx.scene.media.AudioClip.<init>(AudioClip.java:87)
+2023.04.30 01:14:25 ERROR 	at scalafx.scene.media.AudioClip.<init>(AudioClip.scala:53)
+2023.04.30 01:14:25 ERROR 	at com.example.HelloWorld$$anon$2.<init>(HelloWorld.scala:68)
+2023.04.30 01:14:25 ERROR 	at com.example.HelloWorld$$anon$1.<init>(HelloWorld.scala:95)
+2023.04.30 01:14:25 ERROR 	at com.example.HelloWorld$.start(HelloWorld.scala:96)
+2023.04.30 01:14:25 ERROR 	at scalafx.application.JFXApp3.main$$anonfun$1(JFXApp3.scala:301)
+2023.04.30 01:14:25 ERROR 	at scalafx.application.JFXApp3.init$$anonfun$1(JFXApp3.scala:316)
+2023.04.30 01:14:25 ERROR 	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+2023.04.30 01:14:25 ERROR 	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+2023.04.30 01:14:25 ERROR 	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:575)
+2023.04.30 01:14:25 ERROR 	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:573)
+2023.04.30 01:14:25 ERROR 	at scala.collection.AbstractIterable.foreach(Iterable.scala:933)
+2023.04.30 01:14:25 ERROR 	at scalafx.application.JFXApp3.init(JFXApp3.scala:316)
+2023.04.30 01:14:25 ERROR 	at scalafx.application.JFXApp3.init$(JFXApp3.scala:251)
+2023.04.30 01:14:25 ERROR 	at com.example.HelloWorld$.init(HelloWorld.scala:20)
+2023.04.30 01:14:25 ERROR 	at scalafx.application.AppHelper3.start(AppHelper3.scala:33)
+2023.04.30 01:14:25 ERROR 	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:846)
+2023.04.30 01:14:25 ERROR 	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:474)
+2023.04.30 01:14:25 ERROR 	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:447)
+2023.04.30 01:14:25 ERROR 	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+2023.04.30 01:14:25 ERROR 	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:446)
+2023.04.30 01:14:25 ERROR 	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+2023.04.30 01:14:25 ERROR 	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+2023.04.30 01:14:25 ERROR 	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+2023.04.30 01:14:25 ERROR 	... 1 more
+2023.04.30 01:14:25 INFO  Closing debug server tcp://0.0.0.0:55815
+2023.04.30 01:14:26 INFO  Canceling debug proxy for [com.example.HelloWorld]
+2023.04.30 01:19:25 INFO  Shutting down server
+2023.04.30 01:19:25 INFO  shutting down Metals
+2023.04.30 01:19:25 INFO  Shut down connection with build server.
+2023.04.30 01:19:25 INFO  Shut down connection with build server.
+2023.04.30 08:25:14 INFO  Started: Metals version 0.11.12 in workspace 'D:\Computer Department\GameEngine-main' for client Visual Studio Code 1.73.1.
+Apr 30, 2023 8:25:14 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+Apr 30, 2023 8:25:14 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Apr 30, 2023 8:25:14 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Apr 30, 2023 8:25:15 AM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:D:\Computer Department\GameEngine-main\.metals\metals (H2 2.1)
+Apr 30, 2023 8:25:15 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.073s)
+Apr 30, 2023 8:25:15 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Apr 30, 2023 8:25:15 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.04.30 08:25:15 INFO  time: initialize in 1.32s
+2023.04.30 08:25:17 INFO  Attempting to connect to the build server...
+2023.04.30 08:25:17 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.04.30 08:25:17 INFO  skipping build import with status 'Installed'
+2023.04.30 08:25:22 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\bsp.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.04.30 08:25:22 INFO  Attempting to connect to the build server...
+2023.04.30 08:25:22 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.04.30 08:25:22 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\project\.metals\bsp.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.04.30 08:25:22 INFO  time: Connected to build server in 4.83s
+2023.04.30 08:25:22 INFO  Connected to Build server: Bloop v1.5.6
+2023.04.30 08:25:22 INFO  time: Imported build in 0.21s
+2023.04.30 08:25:28 INFO  time: indexed workspace in 5.54s
+2023.04.30 08:28:03 INFO  Deduplicating compilation of gameengine-main from bsp client 'Metals 0.11.12' (since 2m 40.937s)
+2023.04.30 08:28:05 INFO  C:\Users\BluRay\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\ch\epfl\scala\scala-debug-step-filter_3\3.0.5\scala-debug-step-filter_3-3.0.5.jar
+2023.04.30 08:28:05 INFO  C:\Users\BluRay\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\tasty-core_3\3.2.2\tasty-core_3-3.2.2.jar
+2023.04.30 08:28:05 INFO  C:\Users\BluRay\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-library_3\3.2.2\scala3-library_3-3.2.2.jar
+2023.04.30 08:28:05 INFO  C:\Users\BluRay\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\ch\epfl\scala\tasty-query_3\0.3.1\tasty-query_3-0.3.1.jar
+2023.04.30 08:28:05 INFO  C:\Users\BluRay\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.10\scala-library-2.13.10.jar
+2023.04.30 08:28:10 INFO  Configured debugger context in 5 seconds
+2023.04.30 08:28:10 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\dap-server.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2023.04.30 08:28:10 ERROR Picked up _JAVA_OPTIONS: -Xmx512M
+2023.04.30 08:28:10 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\dap-client.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2023.04.30 08:28:11 INFO  Starting debug proxy for [com.example.HelloWorld]
+2023.04.30 08:28:10 INFO  Trying to attach to remote debuggee VM 127.0.0.1:49787 .
+2023.04.30 08:28:10 INFO  Attaching to debuggee VM succeeded.
+2023.04.30 08:28:11 ERROR Apr 30, 2023 8:28:11 AM com.sun.javafx.application.PlatformImpl startup
+2023.04.30 08:28:11 ERROR WARNING: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @3018f65c'
+2023.04.30 08:28:17 ERROR Exception in Application start method
+2023.04.30 08:28:17 ERROR Exception in thread "main" java.lang.RuntimeException: Exception in Application start method
+2023.04.30 08:28:17 ERROR 	at com.sun.javafx.application.LauncherImpl.launchApplication1(LauncherImpl.java:900)
+2023.04.30 08:28:17 ERROR 	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication$2(LauncherImpl.java:195)
+2023.04.30 08:28:17 ERROR 	at java.base/java.lang.Thread.run(Thread.java:833)
+2023.04.30 08:28:17 ERROR Caused by: MediaException: MEDIA_UNAVAILABLE : D:\Computer Department\GameEngine-main\src\resources\audio\start_game.mp3 (The system cannot find the path specified)
+2023.04.30 08:28:17 ERROR 	at javafx.scene.media.AudioClip.<init>(AudioClip.java:87)
+2023.04.30 08:28:17 ERROR 	at scalafx.scene.media.AudioClip.<init>(AudioClip.scala:53)
+2023.04.30 08:28:17 ERROR 	at com.example.HelloWorld$$anon$2.<init>(HelloWorld.scala:68)
+2023.04.30 08:28:17 ERROR 	at com.example.HelloWorld$$anon$1.<init>(HelloWorld.scala:95)
+2023.04.30 08:28:17 ERROR 	at com.example.HelloWorld$.start(HelloWorld.scala:96)
+2023.04.30 08:28:17 ERROR 	at scalafx.application.JFXApp3.main$$anonfun$1(JFXApp3.scala:301)
+2023.04.30 08:28:17 ERROR 	at scalafx.application.JFXApp3.init$$anonfun$1(JFXApp3.scala:316)
+2023.04.30 08:28:17 ERROR 	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+2023.04.30 08:28:17 ERROR 	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+2023.04.30 08:28:17 ERROR 	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:575)
+2023.04.30 08:28:17 ERROR 	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:573)
+2023.04.30 08:28:17 ERROR 	at scala.collection.AbstractIterable.foreach(Iterable.scala:933)
+2023.04.30 08:28:17 ERROR 	at scalafx.application.JFXApp3.init(JFXApp3.scala:316)
+2023.04.30 08:28:17 ERROR 	at scalafx.application.JFXApp3.init$(JFXApp3.scala:251)
+2023.04.30 08:28:17 ERROR 	at com.example.HelloWorld$.init(HelloWorld.scala:20)
+2023.04.30 08:28:17 ERROR 	at scalafx.application.AppHelper3.start(AppHelper3.scala:33)
+2023.04.30 08:28:17 ERROR 	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:846)
+2023.04.30 08:28:17 ERROR 	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:474)
+2023.04.30 08:28:17 ERROR 	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:447)
+2023.04.30 08:28:17 ERROR 	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+2023.04.30 08:28:17 ERROR 	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:446)
+2023.04.30 08:28:17 ERROR 	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+2023.04.30 08:28:17 ERROR 	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+2023.04.30 08:28:17 ERROR 	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+2023.04.30 08:28:17 ERROR 	... 1 more
+2023.04.30 08:28:17 INFO  Closing debug server tcp://0.0.0.0:49784
+2023.04.30 08:28:17 INFO  Canceling debug proxy for [com.example.HelloWorld]
+Apr 30, 2023 8:38:26 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 40
+2023.04.30 08:41:54 INFO  Shutting down server
+2023.04.30 08:41:54 INFO  shutting down Metals
+2023.04.30 08:41:54 INFO  Shut down connection with build server.
+2023.04.30 08:41:54 INFO  Shut down connection with build server.
+2023.04.30 08:41:54 INFO  Exiting server
+2023.04.30 08:42:15 INFO  Started: Metals version 0.11.12 in workspace 'D:\Computer Department\GameEngine-main' for client Visual Studio Code 1.73.1.
+Apr 30, 2023 8:42:15 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+Apr 30, 2023 8:42:15 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Apr 30, 2023 8:42:15 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Apr 30, 2023 8:42:15 AM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:D:\Computer Department\GameEngine-main\.metals\metals (H2 2.1)
+Apr 30, 2023 8:42:15 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.022s)
+Apr 30, 2023 8:42:15 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Apr 30, 2023 8:42:15 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.04.30 08:42:15 INFO  time: initialize in 0.82s
+2023.04.30 08:42:17 INFO  Attempting to connect to the build server...
+2023.04.30 08:42:17 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.04.30 08:42:17 INFO  skipping build import with status 'Installed'
+2023.04.30 08:42:18 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\bsp.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.04.30 08:42:18 INFO  Attempting to connect to the build server...
+2023.04.30 08:42:18 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.04.30 08:42:18 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\project\.metals\bsp.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.04.30 08:42:18 INFO  time: Connected to build server in 0.35s
+2023.04.30 08:42:18 INFO  Connected to Build server: Bloop v1.5.6
+2023.04.30 08:42:18 INFO  time: Imported build in 0.11s
+2023.04.30 08:42:23 INFO  time: indexed workspace in 4.72s
+2023.04.30 08:42:29 INFO  Deduplicating compilation of gameengine-main from bsp client 'Metals 0.11.12' (since 11.158s)
+2023.04.30 08:42:33 INFO  Configured debugger context in 4 seconds
+2023.04.30 08:42:33 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\dap-server.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2023.04.30 08:42:33 ERROR Picked up _JAVA_OPTIONS: -Xmx512M
+2023.04.30 08:42:33 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\dap-client.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2023.04.30 08:42:33 INFO  Starting debug proxy for [com.example.HelloWorld]
+2023.04.30 08:42:33 INFO  Trying to attach to remote debuggee VM 127.0.0.1:49820 .
+2023.04.30 08:42:33 INFO  Attaching to debuggee VM succeeded.
+2023.04.30 08:42:34 ERROR Apr 30, 2023 8:42:34 AM com.sun.javafx.application.PlatformImpl startup
+2023.04.30 08:42:34 ERROR WARNING: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @3018f65c'
+2023.04.30 08:47:50 INFO  Closing debug server tcp://0.0.0.0:49817
+2023.04.30 08:47:50 INFO  Canceling debug proxy for [com.example.HelloWorld]
+2023.04.30 08:47:56 INFO  Deduplicating compilation of gameengine-main from bsp client 'Metals 0.11.12' (since 5m 38.342s)
+2023.04.30 08:47:59 INFO  Configured debugger context in 2 seconds
+2023.04.30 08:47:59 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\dap-server.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2023.04.30 08:47:59 ERROR Picked up _JAVA_OPTIONS: -Xmx512M
+2023.04.30 08:47:59 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\dap-client.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2023.04.30 08:47:59 INFO  Starting debug proxy for [com.example.HelloWorld]
+2023.04.30 08:47:59 INFO  Trying to attach to remote debuggee VM 127.0.0.1:49830 .
+2023.04.30 08:47:59 INFO  Attaching to debuggee VM succeeded.
+2023.04.30 08:47:59 ERROR Apr 30, 2023 8:48:00 AM com.sun.javafx.application.PlatformImpl startup
+2023.04.30 08:47:59 ERROR WARNING: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @3018f65c'
+2023.04.30 08:48:07 INFO  Canceling debug proxy for [com.example.HelloWorld]
+2023.04.30 08:48:07 INFO  Closing debug server tcp://0.0.0.0:49827
+Apr 30, 2023 8:52:18 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 91
+2023.04.30 08:54:06 INFO  Shutting down server
+2023.04.30 08:54:06 INFO  shutting down Metals
+2023.04.30 08:54:06 INFO  Shut down connection with build server.
+2023.04.30 08:54:06 INFO  Shut down connection with build server.
+2023.04.30 08:54:06 INFO  Exiting server
+2023.05.01 23:13:05 INFO  Started: Metals version 0.11.12 in workspace 'D:\Computer Department\GameEngine-main' for client Visual Studio Code 1.73.1.
+May 01, 2023 11:13:05 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+May 01, 2023 11:13:05 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+May 01, 2023 11:13:05 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+May 01, 2023 11:13:05 PM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:D:\Computer Department\GameEngine-main\.metals\metals (H2 2.1)
+May 01, 2023 11:13:05 PM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.031s)
+May 01, 2023 11:13:05 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+May 01, 2023 11:13:05 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.05.01 23:13:06 INFO  time: initialize in 0.93s
+2023.05.01 23:13:07 INFO  Attempting to connect to the build server...
+2023.05.01 23:13:07 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.05.01 23:13:07 INFO  skipping build import with status 'Installed'
+2023.05.01 23:13:12 INFO  no build target found for D:\Computer Department\GameEngine-main\src\main\scala\com\example\game_engine\tic_tac_toe\XOController.scala. Using presentation compiler with project's scala-library version: 3.2.2
+2023.05.01 23:13:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\bsp.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.05.01 23:13:12 INFO  Attempting to connect to the build server...
+2023.05.01 23:13:12 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.05.01 23:13:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\project\.metals\bsp.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.05.01 23:13:12 INFO  time: Connected to build server in 5.08s
+2023.05.01 23:13:12 INFO  Connected to Build server: Bloop v1.5.6
+2023.05.01 23:13:12 INFO  time: Imported build in 0.2s
+2023.05.01 23:13:13 INFO  time: code lens generation in 5.7s
+2023.05.01 23:13:16 INFO  time: indexed workspace in 3.99s
+2023.05.01 23:14:15 ERROR Picked up _JAVA_OPTIONS: -Xmx512M
+2023.05.01 23:14:17 INFO  
+2023.05.01 23:14:17 INFO  Template applied in D:\Computer Department\.\scala_learning
+2023.05.01 23:14:17 INFO  
+2023.05.01 23:14:17 INFO  time: ran 'giter8.Giter8' in 2.85s
+2023.05.01 23:14:24 INFO  Shutting down server
+2023.05.01 23:14:24 INFO  shutting down Metals
+2023.05.01 23:14:24 INFO  Shut down connection with build server.
+2023.05.01 23:14:24 INFO  Shut down connection with build server.
+2023.05.01 23:14:24 INFO  Exiting server
+2023.05.04 03:31:13 INFO  Started: Metals version 0.11.12 in workspace 'D:\Computer Department\GameEngine-main' for client Visual Studio Code 1.73.1.
+May 04, 2023 3:31:13 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+May 04, 2023 3:31:13 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+May 04, 2023 3:31:13 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+May 04, 2023 3:31:14 AM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:D:\Computer Department\GameEngine-main\.metals\metals (H2 2.1)
+May 04, 2023 3:31:14 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.027s)
+May 04, 2023 3:31:14 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+May 04, 2023 3:31:14 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.05.04 03:31:14 INFO  time: initialize in 1.54s
+2023.05.04 03:31:16 INFO  Attempting to connect to the build server...
+2023.05.04 03:31:16 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.05.04 03:31:17 INFO  skipping build import with status 'Installed'
+2023.05.04 03:31:22 INFO  no build target found for D:\Computer Department\GameEngine-main\src\main\scala\com\example\HelloWorld.scala. Using presentation compiler with project's scala-library version: 3.2.2
+2023.05.04 03:31:22 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\bsp.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.05.04 03:31:22 INFO  Attempting to connect to the build server...
+2023.05.04 03:31:22 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.05.04 03:31:22 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\project\.metals\bsp.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.05.04 03:31:22 INFO  time: Connected to build server in 6.27s
+2023.05.04 03:31:22 INFO  Connected to Build server: Bloop v1.5.6
+2023.05.04 03:31:23 INFO  time: Imported build in 0.38s
+2023.05.04 03:31:25 INFO  time: code lens generation in 3.23s
+2023.05.04 03:31:25 INFO  no build target found for D:\Computer Department\GameEngine-main\src\main\scala\com\example\HelloWorld.scala. Using presentation compiler with project's scala-library version: 3.2.2
+May 04, 2023 3:31:26 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 18
+2023.05.04 03:31:26 INFO  time: code lens generation in 4.03s
+2023.05.04 03:31:31 INFO  time: indexed workspace in 7.71s
+May 04, 2023 4:01:23 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 119
+May 04, 2023 4:02:14 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 155
+May 04, 2023 4:03:15 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 194
+May 04, 2023 4:03:47 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 223
+May 04, 2023 4:03:55 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 227
+May 04, 2023 4:04:00 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 234
+May 04, 2023 4:04:10 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 247
+May 04, 2023 4:05:07 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 288
+May 04, 2023 4:05:10 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 293
+May 04, 2023 4:06:51 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 333
+May 04, 2023 4:07:32 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 380
+May 04, 2023 4:15:38 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 621
+May 04, 2023 4:16:24 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 642
+May 04, 2023 4:17:42 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 713
+May 04, 2023 4:18:11 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 741
+May 04, 2023 4:24:53 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1023
+May 04, 2023 4:25:08 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1050
+2023.05.04 04:25:09 INFO  compiling gameengine-main (1 scala source)
+2023.05.04 04:25:14 INFO  time: compiled gameengine-main in 5.18s
+May 04, 2023 4:25:23 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.DebugProvider$NoRunOptionException$: There is nothing to run or test in the current file.
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.DebugProvider$NoRunOptionException$: There is nothing to run or test in the current file.
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:747)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2186)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: scala.meta.internal.metals.debug.DebugProvider$NoRunOptionException$: There is nothing to run or test in the current file.
+	at scala.meta.internal.metals.debug.DebugProvider$NoRunOptionException$.<clinit>(DebugProvider.scala:920)
+	at scala.meta.internal.metals.debug.DebugProvider.$anonfun$resolveInFile$2(DebugProvider.scala:370)
+	at scala.Option.fold(Option.scala:263)
+	at scala.meta.internal.metals.debug.DebugProvider.resolveInFile(DebugProvider.scala:341)
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:475)
+	at scala.meta.internal.metals.MetalsLspService.executeCommand(MetalsLspService.scala:2031)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+2023.05.04 04:25:58 INFO  compiling gameengine-main (1 scala source)
+2023.05.04 04:25:58 INFO  time: compiled gameengine-main in 0.99s
+2023.05.04 04:26:33 INFO  Shutting down server
+2023.05.04 04:26:33 INFO  shutting down Metals
+2023.05.04 04:26:34 INFO  Shut down connection with build server.
+2023.05.04 04:26:34 INFO  Shut down connection with build server.
+2023.05.04 04:26:33 INFO  Exiting server
+2023.05.04 13:55:25 INFO  Started: Metals version 0.11.12 in workspace 'D:\Computer Department\GameEngine-main' for client Visual Studio Code 1.73.1.
+May 04, 2023 1:55:25 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+May 04, 2023 1:55:25 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+May 04, 2023 1:55:25 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+May 04, 2023 1:55:25 PM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:D:\Computer Department\GameEngine-main\.metals\metals (H2 2.1)
+May 04, 2023 1:55:25 PM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.015s)
+May 04, 2023 1:55:25 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+May 04, 2023 1:55:25 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.05.04 13:55:25 INFO  time: initialize in 0.58s
+2023.05.04 13:55:27 INFO  Attempting to connect to the build server...
+2023.05.04 13:55:27 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.05.04 13:55:27 INFO  skipping build import with status 'Installed'
+2023.05.04 13:55:30 INFO  no build target found for D:\Computer Department\GameEngine-main\src\main\scala\com\example\game_engine\GameEngine.scala. Using presentation compiler with project's scala-library version: 3.2.2
+2023.05.04 13:55:31 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\bsp.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.05.04 13:55:31 INFO  Attempting to connect to the build server...
+2023.05.04 13:55:31 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.05.04 13:55:31 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\project\.metals\bsp.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.05.04 13:55:31 INFO  time: Connected to build server in 4.74s
+2023.05.04 13:55:31 INFO  Connected to Build server: Bloop v1.5.6
+2023.05.04 13:55:32 INFO  time: Imported build in 0.22s
+2023.05.04 13:55:33 INFO  time: code lens generation in 2.34s
+2023.05.04 13:55:34 INFO  no build target found for D:\Computer Department\GameEngine-main\src\main\scala\com\example\game_engine\GameEngine.scala. Using presentation compiler with project's scala-library version: 3.2.2
+2023.05.04 13:55:37 INFO  time: indexed workspace in 5.41s
+May 04, 2023 1:57:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 149
+May 04, 2023 1:57:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 158
+May 04, 2023 2:43:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 364
+May 04, 2023 2:45:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 406
+2023.05.04 14:48:09 INFO  compiling gameengine-main (1 scala source)
+2023.05.04 14:48:16 INFO  time: compiled gameengine-main in 7.53s
+May 04, 2023 2:52:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 566
+May 04, 2023 2:52:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 588
+May 04, 2023 3:01:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 738
+May 04, 2023 3:01:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 754
+May 04, 2023 3:01:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 757
+2023.05.04 15:20:54 INFO  Shutting down server
+2023.05.04 15:20:54 INFO  shutting down Metals
+2023.05.04 15:20:54 INFO  Shut down connection with build server.
+2023.05.04 15:20:54 INFO  Shut down connection with build server.
+2023.05.05 16:19:20 INFO  Started: Metals version 0.11.12 in workspace 'D:\Computer Department\GameEngine-main' for client Visual Studio Code 1.73.1.
+May 05, 2023 4:19:20 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+May 05, 2023 4:19:20 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+May 05, 2023 4:19:20 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+May 05, 2023 4:19:27 PM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:D:\Computer Department\GameEngine-main\.metals\metals (H2 2.1)
+May 05, 2023 4:19:27 PM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.015s)
+May 05, 2023 4:19:27 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+May 05, 2023 4:19:27 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.05.05 16:19:27 INFO  time: initialize in 7.03s
+2023.05.05 16:19:28 INFO  Attempting to connect to the build server...
+2023.05.05 16:19:28 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.05.05 16:19:28 INFO  skipping build import with status 'Installed'
+2023.05.05 16:19:30 INFO  Shutting down server
+2023.05.05 16:19:30 INFO  shutting down Metals
+2023.05.05 16:41:02 INFO  Started: Metals version 0.11.12 in workspace 'D:\Computer Department\GameEngine-main' for client Visual Studio Code 1.73.1.
+May 05, 2023 4:41:02 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+May 05, 2023 4:41:02 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+May 05, 2023 4:41:02 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+May 05, 2023 4:41:02 PM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:D:\Computer Department\GameEngine-main\.metals\metals (H2 2.1)
+May 05, 2023 4:41:02 PM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.014s)
+May 05, 2023 4:41:02 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+May 05, 2023 4:41:02 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.05.05 16:41:03 INFO  time: initialize in 0.96s
+2023.05.05 16:41:04 INFO  Attempting to connect to the build server...
+2023.05.05 16:41:04 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.05.05 16:41:04 INFO  skipping build import with status 'Installed'
+2023.05.05 16:41:04 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\bsp.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.05.05 16:41:04 INFO  Attempting to connect to the build server...
+2023.05.05 16:41:04 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.05.05 16:41:04 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\project\.metals\bsp.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.05.05 16:41:04 INFO  time: Connected to build server in 0.39s
+2023.05.05 16:41:04 INFO  Connected to Build server: Bloop v1.5.6
+2023.05.05 16:41:05 INFO  time: Imported build in 0.11s
+2023.05.05 16:41:09 INFO  time: indexed workspace in 4.02s
+2023.05.05 16:42:49 INFO  Shutting down server
+2023.05.05 16:42:49 INFO  shutting down Metals
+2023.05.05 16:42:49 INFO  Shut down connection with build server.
+2023.05.05 16:42:49 INFO  Shut down connection with build server.
+2023.05.05 16:42:49 INFO  Exiting server
+2023.05.05 16:50:11 INFO  Started: Metals version 0.11.12 in workspace 'D:\Computer Department\GameEngine-main' for client Visual Studio Code 1.73.1.
+May 05, 2023 4:50:11 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+May 05, 2023 4:50:11 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+May 05, 2023 4:50:11 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+May 05, 2023 4:50:12 PM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:D:\Computer Department\GameEngine-main\.metals\metals (H2 2.1)
+May 05, 2023 4:50:12 PM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.015s)
+May 05, 2023 4:50:12 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+May 05, 2023 4:50:12 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.05.05 16:50:12 INFO  time: initialize in 0.8s
+2023.05.05 16:50:13 INFO  Attempting to connect to the build server...
+2023.05.05 16:50:13 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.05.05 16:50:14 INFO  skipping build import with status 'Installed'
+2023.05.05 16:50:14 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\bsp.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.05.05 16:50:14 INFO  Attempting to connect to the build server...
+2023.05.05 16:50:14 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.05.05 16:50:14 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\project\.metals\bsp.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.05.05 16:50:14 INFO  time: Connected to build server in 0.25s
+2023.05.05 16:50:14 INFO  Connected to Build server: Bloop v1.5.6
+2023.05.05 16:50:19 INFO  time: indexed workspace in 4.98s
+May 05, 2023 4:51:54 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+May 05, 2023 4:51:54 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+May 05, 2023 4:51:54 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+May 05, 2023 4:52:01 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+May 05, 2023 4:53:25 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+May 05, 2023 4:54:30 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+May 05, 2023 4:54:53 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.05.05 16:59:29 INFO  compiling gameengine-main (1 scala source)
+2023.05.05 16:59:32 INFO  time: compiled gameengine-main in 2.2s
+2023.05.05 16:59:41 INFO  Deduplicating compilation of gameengine-main from bsp client 'Metals 0.11.12' (since 9m 26.851s)
+2023.05.05 16:59:41 INFO  C:\Users\BluRay\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\ch\epfl\scala\scala-debug-step-filter_3\3.0.5\scala-debug-step-filter_3-3.0.5.jar
+2023.05.05 16:59:41 INFO  C:\Users\BluRay\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\tasty-core_3\3.2.2\tasty-core_3-3.2.2.jar
+2023.05.05 16:59:41 INFO  C:\Users\BluRay\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-library_3\3.2.2\scala3-library_3-3.2.2.jar
+2023.05.05 16:59:41 INFO  C:\Users\BluRay\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\ch\epfl\scala\tasty-query_3\0.3.1\tasty-query_3-0.3.1.jar
+2023.05.05 16:59:41 INFO  C:\Users\BluRay\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.10\scala-library-2.13.10.jar
+2023.05.05 16:59:44 INFO  Configured debugger context in 2 seconds
+2023.05.05 16:59:44 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\dap-server.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2023.05.05 16:59:44 ERROR Picked up _JAVA_OPTIONS: -Xmx512M
+2023.05.05 16:59:44 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\dap-client.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2023.05.05 16:59:44 INFO  Starting debug proxy for [com.example.HelloWorld]
+2023.05.05 16:59:44 INFO  Trying to attach to remote debuggee VM 127.0.0.1:51121 .
+2023.05.05 16:59:44 INFO  Attaching to debuggee VM succeeded.
+2023.05.05 16:59:44 ERROR May 05, 2023 4:59:45 PM com.sun.javafx.application.PlatformImpl startup
+2023.05.05 16:59:44 ERROR WARNING: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @3018f65c'
+2023.05.05 16:59:53 INFO  Canceling debug proxy for [com.example.HelloWorld]
+2023.05.05 16:59:53 INFO  Closing debug server tcp://0.0.0.0:51118
+2023.05.05 17:02:31 INFO  Shutting down server
+2023.05.05 17:02:31 INFO  shutting down Metals
+2023.05.05 17:02:31 INFO  Shut down connection with build server.
+2023.05.05 17:02:31 INFO  Shut down connection with build server.
+2023.05.05 17:02:31 INFO  Exiting server
+2023.05.05 17:31:45 INFO  Started: Metals version 0.11.12 in workspace 'D:\Computer Department\GameEngine-main' for client Visual Studio Code 1.73.1.
+May 05, 2023 5:31:45 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+May 05, 2023 5:31:45 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+May 05, 2023 5:31:45 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+May 05, 2023 5:31:45 PM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:D:\Computer Department\GameEngine-main\.metals\metals (H2 2.1)
+May 05, 2023 5:31:45 PM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.017s)
+May 05, 2023 5:31:45 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+May 05, 2023 5:31:45 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.05.05 17:31:45 INFO  time: initialize in 0.92s
+2023.05.05 17:31:47 INFO  Attempting to connect to the build server...
+2023.05.05 17:31:47 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.05.05 17:31:47 INFO  skipping build import with status 'Installed'
+2023.05.05 17:31:47 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\bsp.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.05.05 17:31:47 INFO  Attempting to connect to the build server...
+2023.05.05 17:31:47 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.05.05 17:31:47 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\project\.metals\bsp.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.05.05 17:31:47 INFO  time: Connected to build server in 0.56s
+2023.05.05 17:31:47 INFO  Connected to Build server: Bloop v1.5.6
+2023.05.05 17:31:47 INFO  time: Imported build in 0.19s
+2023.05.05 17:31:50 INFO  no build target found for D:\Computer Department\GameEngine-main\src\main\scala\com\example\HelloWorld.scala. Using presentation compiler with project's scala-library version: 3.2.2
+May 05, 2023 5:31:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7
+2023.05.05 17:31:52 INFO  time: indexed workspace in 4.15s
+2023.05.05 17:35:37 INFO  Shutting down server
+2023.05.05 17:35:37 INFO  shutting down Metals
+2023.05.05 17:35:37 INFO  Shut down connection with build server.
+2023.05.05 17:35:37 INFO  Shut down connection with build server.
+2023.05.05 17:35:37 INFO  Exiting server
+2023.05.05 17:47:47 INFO  Started: Metals version 0.11.12 in workspace 'D:\Computer Department\GameEngine-main' for client Visual Studio Code 1.73.1.
+May 05, 2023 5:47:47 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+May 05, 2023 5:47:47 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+May 05, 2023 5:47:47 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+May 05, 2023 5:47:48 PM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:D:\Computer Department\GameEngine-main\.metals\metals (H2 2.1)
+May 05, 2023 5:47:48 PM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.017s)
+May 05, 2023 5:47:48 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+May 05, 2023 5:47:48 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.05.05 17:47:48 INFO  time: initialize in 1.06s
+2023.05.05 17:47:50 INFO  Attempting to connect to the build server...
+2023.05.05 17:47:50 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.05.05 17:47:50 INFO  skipping build import with status 'Installed'
+2023.05.05 17:47:50 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\.metals\bsp.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.05.05 17:47:50 INFO  Attempting to connect to the build server...
+2023.05.05 17:47:50 INFO  Bloop uses C:\Program Files\Java\jdk-18.0.2 defined at C:\Users\BluRay\.bloop\bloop.json
+2023.05.05 17:47:50 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Computer Department\GameEngine-main\project\.metals\bsp.trace.json or C:\Users\BluRay\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.05.05 17:47:50 INFO  time: Connected to build server in 0.42s
+2023.05.05 17:47:50 INFO  Connected to Build server: Bloop v1.5.6
+2023.05.05 17:47:50 INFO  time: Imported build in 0.11s
+May 05, 2023 5:47:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+2023.05.05 17:47:55 INFO  time: indexed workspace in 3.98s
+2023.05.05 17:52:38 INFO  time: code lens generation in 2.47s
+Exception in thread "pool-7-thread-1" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+May 05, 2023 5:53:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 79
+Exception in thread "pool-7-thread-2" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+May 05, 2023 5:54:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 113
+2023.05.05 18:12:38 INFO  Shutting down server
+2023.05.05 18:12:38 INFO  shutting down Metals
+2023.05.05 18:12:38 INFO  Shut down connection with build server.
+2023.05.05 18:12:38 INFO  Shut down connection with build server.
+2023.05.05 18:12:38 INFO  Exiting server
